@@ -14,7 +14,7 @@ Script to generate a mongodb server and a mongo express server in Docker Contain
 1. Install Docker
 2. Configure your database in .env file
 3. Execute start_mongodb.sh
-4. mongodb and mongo express started with your configuration
+4. mongodb and mongo express starts with your configuration
 
 ### Prerequisites
 
@@ -69,7 +69,7 @@ MONGODB_SERVER_PORT=8080<br>
 MONGODB_EXPRESS_SERVER_PORT=8081<br>
 LOCAL_DATA_STORAGE=exampleData<br>
 
-Execute Bash script to start the database
+Execute Bash script to start the installation
 ```
 ./start_mongodb.sh
 ```
@@ -79,7 +79,7 @@ Confirm Reset of the database with "y"
 ```
 Do You want to reset the Database? y
 ```
-Your database started with your config. 
+Your database starts with your config. 
 ## Usage <a name = "usage"></a>
 To stopp the database you can use ctrl+c.<br> 
 To start the database you can execute the shell script another time and reject the reset or use docker-compose up.<br>
