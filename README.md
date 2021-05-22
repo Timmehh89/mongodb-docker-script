@@ -59,7 +59,7 @@ Set **local** relative **directory** to save the databse data
 ```
 LOCAL_DATA_STORAGE= <yourlocalDirectory>
 ```
-Example:<br>
+Example example.env:<br>
 DB_NAME=example <br>
 DB_USER=exampleUser <br>
 DB_USER_PASSWORD=exampleUserPassword<br>
