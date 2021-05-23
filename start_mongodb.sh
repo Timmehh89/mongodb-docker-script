@@ -7,11 +7,11 @@ then
     echo "Remove Docker Cotainer"
     docker-compose down
 
-    DIR="./${LOCAL_DATA_STORAGE}/"
-    echo "Check Data Directory ./${LOCAL_DATA_STORAGE}/ "
+    DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"/${LOCAL_DATA_STORAGE}/
+    echo "Check Data Directory $DIR "
     if [ -d "$DIR" ]; then
         echo "Remove Data from Directory"
-        sudo rm -r "./${LOCAL_DATA_STORAGE}/"
+        sudo rm -r "$DIR"
     fi
     echo "Create Init File"
     (envsubst <mongo-init-template.txt)>mongo-init.js
