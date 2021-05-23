@@ -71,7 +71,7 @@ LOCAL_DATA_STORAGE=exampleData<br>
 
 Execute Bash script to start the installation
 ```
-./start_mongodb.sh
+./install.sh
 ```
 
 
@@ -81,8 +81,8 @@ Do You want to reset the Database? y
 ```
 Your database starts with your config. 
 ## Usage <a name = "usage"></a>
-To stopp the database you can use ctrl+c.<br> 
-To start the database you can execute the shell script another time and reject the reset or use docker-compose up.<br>
-To reset the database you can execute the start_mongodb.sh and accept the reset.<br>
+To stop the database with "docker-compose down" or execute stop.sh. stop.sh also works from different directories<br> 
+To start the database you can execute "docker-compose up" or execute start.sh. start.sh also works from different directories<br>
+To reset the database you can execute the install.sh and accept the reset.<br>
  :heavy_exclamation_mark: It will remove the hole data from the Database
 

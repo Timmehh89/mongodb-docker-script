@@ -19,5 +19,5 @@ then
     (envsubst <$DIR/mongo-init-template.txt)>$DIR/mongo-init.js
 fi
 
-echo "Starting Docker"
+echo "Starting mongodb docker container"
 docker-compose -f $DIR/docker-compose.yml up -d
